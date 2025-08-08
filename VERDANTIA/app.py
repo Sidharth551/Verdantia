@@ -70,11 +70,11 @@ if not st.session_state.authenticated:
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
         st.markdown("<h2 style='text-align:center; font-weight:bold;'>♻️ Verdantia</h2>", unsafe_allow_html=True)
-        auth_mode = st.radio("Login or Signup", ["Login", "Signup"])
+        auth_mode = st.radio("Login or Sign up", ["Login", "Sign up"])
         with st.form("login_form"):
             email = st.text_input("Email")
             password = st.text_input("Password", type="password")
-            if auth_mode == "Signup":
+            if auth_mode == "Sign up":
                 nickname = st.text_input("Choose a nickname")
                 confirm_password = st.text_input("Confirm Password", type="password")
             submitted = st.form_submit_button("Continue")
@@ -83,7 +83,7 @@ if not st.session_state.authenticated:
             users = load_user_data()
             if not is_valid_email(email):
                 st.error("❌ Invalid email format.")
-            elif auth_mode == "Signup":
+            elif auth_mode == "Sign up":
                 if password != confirm_password:
                     st.error("❌ Passwords do not match.")
                 elif email in users:
@@ -216,5 +216,6 @@ elif page == "Leaderboard":
     st.title("🌍 Leaderboard")
     rows = sorted([(v["nickname"], v["points"]) for v in user_data.values()], key=lambda x: x[1], reverse=True)
     ui.render_leaderboard_table(rows)
+
 
 
