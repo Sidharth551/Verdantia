@@ -9,7 +9,9 @@ from utils import (
 import ui
 
 # Load CSS
-with open("style.css") as f:
+# Find the path of style.css no matter where Streamlit runs
+css_path = os.path.join(os.path.dirname(__file__), "style.css")
+with open(css_path) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 USER_DATA_FILE = "users.json"
@@ -214,4 +216,5 @@ elif page == "Leaderboard":
     st.title("🌍 Leaderboard")
     rows = sorted([(v["nickname"], v["points"]) for v in user_data.values()], key=lambda x: x[1], reverse=True)
     ui.render_leaderboard_table(rows)
+
 
