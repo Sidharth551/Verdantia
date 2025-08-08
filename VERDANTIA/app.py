@@ -214,3 +214,4 @@ elif page == "Leaderboard":
     st.title("🌍 Leaderboard")
     rows = sorted([(v["nickname"], v["points"]) for v in user_data.values()], key=lambda x: x[1], reverse=True)
     ui.render_leaderboard_table(rows)
+
