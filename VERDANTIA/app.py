@@ -202,7 +202,7 @@ elif page == "Achievements":
     ("♻️ Plastic Buster", "Earn 50 points", 50),
     ("🌱 Compost Champ", "Earn 100 points", 100),
     ("🚫 No‑Plastic Day", "Earn 150 points", 150),
-    ("👕 Clothes Donator", "Earn 200 points", 200),
+    ("☘️ Plastic Killer", "Earn 200 points", 200),
     ("📆 Weeklong Warrior", "Earn 250 points", 250),
     ("🧠 Sorting Pro", "Earn 300 points", 300),
     ("💻 E‑Waste Slayer", "Earn 400 points", 400),
@@ -216,6 +216,7 @@ elif page == "Leaderboard":
     st.title("🌍 Leaderboard")
     rows = sorted([(v["nickname"], v["points"]) for v in user_data.values()], key=lambda x: x[1], reverse=True)
     ui.render_leaderboard_table(rows)
+
 
 
 
