@@ -1,0 +1,227 @@
+/* Base */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7f9;
+    color: #333333;
+}
+
+/* Title */
+h1, h2, h3 {
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.css-1d391kg {
+    background-color: #e8f5e9 !important;
+    border-right: 1px solid #c8e6c9;
+    padding-top: 2rem !important;
+}
+
+.sidebar .sidebar-content {
+    padding: 1rem;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #43a047 !important;
+    color: white !important;
+    font-weight: bold !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 0.6rem 1.2rem !important;
+    transition: all 0.3s ease !important;
+    font-size: 1rem !important;
+    width: 100%;
+    cursor: pointer;
+}
+
+.stButton > button:hover {
+    background-color: #2e7d32 !important;
+    color: #ffffff !important;
+}
+
+/* Text IP*/
+.stTextInput > div > div > input {
+    border-radius: 6px;
+    border: 1px solid #c8e6c9;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* File uploader */
+.stFileUploader {
+    background-color: #e8f5e9;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px dashed #a5d6a7;
+}
+
+/* Selectbox dropdown */
+.stSelectbox > div > div > div {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 0.4rem;
+}
+
+/* Info / success / warning boxes */
+.stAlert {
+    border-radius: 6px;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.stAlert.success {
+    background-color: #d0f0c0;
+    color: #1b5e20;
+}
+
+.stAlert.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.stAlert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Image previews */
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Progress bars */
+div[data-testid="stProgress"] > div > div {
+    background-color: #66bb6a;
+}
+
+/* Quest container box */
+.quest-box {
+    background-color: #ffffff;
+    border-left: 5px solid #66bb6a;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+/* Badges ? */
+.badge {
+    display: inline-block;
+    background-color: #a5d6a7;
+    color: #1b5e20;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    margin: 0.2rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+/* Footer */
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999999;
+}
+
+/* Achievements Grid */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Individual Achievement */
+.achievement {
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: #f4f4f4;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.achievement:hover {
+    transform: scale(1.04);
+}
+
+/* Unlocked Achievement */
+.unlocked {
+    background-color: #e6ffe6;
+    border-color: #3cb371;
+    color: #2e8b57;
+}
+
+/* Locked Achievement */
+.locked {
+    background-color: #f0f0f0;
+    border-color: #cccccc;
+    color: #999999;
+}
+
+/* Toast or popup notification review needed */
+.toast-message {
+    background-color: #f1f8e9;
+    color: #33691e;
+    padding: 10px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Leaderboard */
+.leaderboard-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 10px;
+}
+
+table td, table th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+/* Login form */
+.login-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #2E7D32;
+    margin-bottom: 1.5rem;
+}
+
+.login-form input {
+    margin-bottom: 1rem;
+}
+
+.login-form button {
+    margin-top: 1rem;
+}
